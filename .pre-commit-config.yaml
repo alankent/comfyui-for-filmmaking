@@ -1,0 +1,21 @@
+# Pre commit hook to pretty print workflows before committing to repo.
+# Makes them easier to read and see differences in commits.
+#
+# pip install pre-commit
+# pre-commit install
+
+repos:
+  - repo: local
+    hooks:
+      - id: pretty-json-workflows
+        name: Pretty-print JSON in workflows
+        entry: >
+          bash -c '
+          for file in "$@"; do
+            jq --indent 2 . "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+          done
+          ' --
+        language: system
+        files: ^workflows/.*\.json$
+        pass_filenames: true
+        stages: [pre-commit]
