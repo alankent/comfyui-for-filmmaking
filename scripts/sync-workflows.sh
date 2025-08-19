@@ -36,7 +36,7 @@ find "$REPO_ROOT" -type f -name "*.json" | while read -r repo_file; do
 
   if [ -f "$source_file" ]; then
     # Compare modification times
-    if [ "$source_file" -nt "$repo_file" ]; then
+    if [ ! -s "$repo_file" ] || [ "$source_file" -nt "$repo_file" ]; then
       #echo "Updating $repo_file from ComfyUI source"
       echo "Updating $rel_path from ComfyUI source"
       # Make sure destination directory exists
