@@ -36,17 +36,18 @@ find "$REPO_ROOT" -type f -name "*.json" | while read -r repo_file; do
 
   if [ -f "$source_file" ]; then
     # Compare modification times
-    if [ ! -s "$repo_file" ] || [ "$source_file" -nt "$repo_file" ]; then
+    #if [ ! -s "$repo_file" ] || [ "$source_file" -nt "$repo_file" ]; then
+    #if [ ! -s "$repo_file" ]; then
       #echo "Updating $repo_file from ComfyUI source"
       echo "Updating $rel_path from ComfyUI source"
       # Make sure destination directory exists
       mkdir -p "$(dirname "$repo_file")"
       # Prettify
       jq --indent 2 . < "$source_file" > "$repo_file"
-    else
-      #echo "Skipping $repo_file"
-      echo "Skipping $rel_path"
-    fi
+    #else
+      ##echo "Skipping $repo_file"
+      #echo "Skipping $rel_path"
+    #fi
   else
     echo "$source_file does not exist"
   fi
