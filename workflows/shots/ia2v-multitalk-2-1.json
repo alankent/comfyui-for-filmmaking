@@ -110,7 +110,7 @@
         262
       ],
       "flags": {},
-      "order": 19,
+      "order": 20,
       "mode": 0,
       "inputs": [
         {
@@ -244,7 +244,7 @@
         390
       ],
       "flags": {},
-      "order": 22,
+      "order": 23,
       "mode": 0,
       "inputs": [
         {
@@ -431,7 +431,7 @@
         174
       ],
       "flags": {},
-      "order": 24,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -688,7 +688,7 @@
         178
       ],
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -791,7 +791,7 @@
         58
       ],
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -836,7 +836,7 @@
         274
       ],
       "flags": {},
-      "order": 18,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -1144,7 +1144,7 @@
         314
       ],
       "flags": {},
-      "order": 10,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
@@ -1183,8 +1183,8 @@
       "properties": {
         "cnr_id": "comfy-core",
         "ver": "0.3.48",
-        "widget_ue_connectable": {},
-        "Node name for S&R": "LoadImage"
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {}
       },
       "widgets_values": [
         "BP-caveman-dance-mask (1).png",
@@ -1203,7 +1203,7 @@
         202
       ],
       "flags": {},
-      "order": 13,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
@@ -1284,8 +1284,8 @@
       "properties": {
         "aux_id": "MaTeZZ/ComfyUI-WanVideoWrapper-MultiTalk",
         "ver": "f3614e6720744247f3211d60f7b9333f43572384",
-        "widget_ue_connectable": {},
         "Node name for S&R": "WanVideoTorchCompileSettings",
+        "widget_ue_connectable": {},
         "cnr_id": "ComfyUI-WanVideoWrapper"
       },
       "widgets_values": [
@@ -1310,7 +1310,7 @@
         154
       ],
       "flags": {},
-      "order": 14,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -1374,8 +1374,8 @@
       "properties": {
         "aux_id": "MaTeZZ/ComfyUI-WanVideoWrapper-MultiTalk",
         "ver": "058286fc0f3b0651a2f6b68309df3f06e8332cc0",
-        "widget_ue_connectable": {},
         "Node name for S&R": "WanVideoBlockSwap",
+        "widget_ue_connectable": {},
         "cnr_id": "ComfyUI-WanVideoWrapper"
       },
       "widgets_values": [
@@ -1398,7 +1398,7 @@
         126
       ],
       "flags": {},
-      "order": 12,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -1457,8 +1457,8 @@
       "properties": {
         "aux_id": "MaTeZZ/ComfyUI-WanVideoWrapper-MultiTalk",
         "ver": "058286fc0f3b0651a2f6b68309df3f06e8332cc0",
-        "widget_ue_connectable": {},
         "Node name for S&R": "WanVideoLoraSelect",
+        "widget_ue_connectable": {},
         "cnr_id": "ComfyUI-WanVideoWrapper"
       },
       "widgets_values": [
@@ -1479,7 +1479,7 @@
         83.98193359375
       ],
       "flags": {},
-      "order": 11,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -1514,8 +1514,8 @@
       "properties": {
         "aux_id": "MaTeZZ/ComfyUI-WanVideoWrapper-MultiTalk",
         "ver": "058286fc0f3b0651a2f6b68309df3f06e8332cc0",
-        "widget_ue_connectable": {},
         "Node name for S&R": "MultiTalkModelLoader",
+        "widget_ue_connectable": {},
         "cnr_id": "ComfyUI-WanVideoWrapper"
       },
       "widgets_values": [
@@ -1597,7 +1597,7 @@
         130
       ],
       "flags": {},
-      "order": 8,
+      "order": 9,
       "mode": 0,
       "inputs": [
         {
@@ -1675,7 +1675,7 @@
         336
       ],
       "flags": {},
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1828,7 +1828,7 @@
         166
       ],
       "flags": {},
-      "order": 21,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -1920,7 +1920,7 @@
         82
       ],
       "flags": {},
-      "order": 7,
+      "order": 10,
       "mode": 0,
       "inputs": [
         {
@@ -1982,7 +1982,7 @@
         78
       ],
       "flags": {},
-      "order": 20,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -2039,7 +2039,7 @@
         242
       ],
       "flags": {},
-      "order": 23,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -2529,7 +2529,7 @@
         154
       ],
       "flags": {},
-      "order": 2,
+      "order": 11,
       "mode": 0,
       "inputs": [
         {
@@ -2611,52 +2611,134 @@
       ]
     },
     {
-      "id": 175,
-      "type": "INTConstant",
+      "id": 125,
+      "type": "LoadAudio",
       "pos": [
-        1633.047119140625,
-        -1270.519775390625
+        1128.8021240234375,
+        -658.6016845703125
       ],
       "size": [
-        210,
-        58
+        357.32049560546875,
+        136
       ],
       "flags": {},
-      "order": 3,
+      "order": 12,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "value",
-          "name": "value",
-          "type": "INT",
+          "localized_name": "audio",
+          "name": "audio",
+          "type": "COMBO",
           "widget": {
-            "name": "value"
+            "name": "audio"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "audioUI",
+          "name": "audioUI",
+          "type": "AUDIO_UI",
+          "widget": {
+            "name": "audioUI"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "AUDIOUPLOAD",
+          "widget": {
+            "name": "upload"
           },
           "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "value",
-          "name": "value",
-          "type": "INT",
+          "localized_name": "AUDIO",
+          "name": "AUDIO",
+          "type": "AUDIO",
           "links": [
-            294,
-            295
+            257
           ]
         }
       ],
       "properties": {
-        "cnr_id": "comfyui-kjnodes",
-        "ver": "f7eb33abc80a2aded1b46dff0dd14d07856a7d50",
-        "Node name for S&R": "INTConstant",
+        "cnr_id": "comfy-core",
+        "ver": "0.3.41",
+        "Node name for S&R": "LoadAudio",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        257
+        "voice_preview_cas.mp3",
+        null,
+        null
       ],
-      "color": "#1b4669",
-      "bgcolor": "#29699c"
+      "color": "#4878ae",
+      "bgcolor": "#34649a"
+    },
+    {
+      "id": 133,
+      "type": "LoadImage",
+      "pos": [
+        1136.247802734375,
+        -1151.209228515625
+      ],
+      "size": [
+        341.23583984375,
+        424.5613708496094
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            283
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.41",
+        "Node name for S&R": "LoadImage",
+        "widget_ue_connectable": {}
+      },
+      "widgets_values": [
+        "ComfyUI_00591_.png",
+        "image"
+      ],
+      "color": "#4878ae",
+      "bgcolor": "#34649a"
     },
     {
       "id": 135,
@@ -2741,134 +2823,52 @@
       "bgcolor": "#34649a"
     },
     {
-      "id": 133,
-      "type": "LoadImage",
+      "id": 175,
+      "type": "INTConstant",
       "pos": [
-        1136.247802734375,
-        -1151.209228515625
+        1270.256103515625,
+        -429.72412109375
       ],
       "size": [
-        341.23583984375,
-        424.5613708496094
+        210,
+        58
       ],
       "flags": {},
-      "order": 6,
+      "order": 14,
       "mode": 0,
       "inputs": [
         {
-          "localized_name": "image",
-          "name": "image",
-          "type": "COMBO",
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
           "widget": {
-            "name": "image"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "IMAGEUPLOAD",
-          "widget": {
-            "name": "upload"
+            "name": "value"
           },
           "link": null
         }
       ],
       "outputs": [
         {
-          "localized_name": "IMAGE",
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "localized_name": "value",
+          "name": "value",
+          "type": "INT",
           "links": [
-            283
-          ]
-        },
-        {
-          "localized_name": "MASK",
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.41",
-        "Node name for S&R": "LoadImage",
-        "widget_ue_connectable": {}
-      },
-      "widgets_values": [
-        "ComfyUI_00591_.png",
-        "image"
-      ],
-      "color": "#5174ac",
-      "bgcolor": "#3d6098"
-    },
-    {
-      "id": 125,
-      "type": "LoadAudio",
-      "pos": [
-        1128.8021240234375,
-        -658.6016845703125
-      ],
-      "size": [
-        357.32049560546875,
-        136
-      ],
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "inputs": [
-        {
-          "localized_name": "audio",
-          "name": "audio",
-          "type": "COMBO",
-          "widget": {
-            "name": "audio"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "audioUI",
-          "name": "audioUI",
-          "type": "AUDIO_UI",
-          "widget": {
-            "name": "audioUI"
-          },
-          "link": null
-        },
-        {
-          "localized_name": "choose file to upload",
-          "name": "upload",
-          "type": "AUDIOUPLOAD",
-          "widget": {
-            "name": "upload"
-          },
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "localized_name": "AUDIO",
-          "name": "AUDIO",
-          "type": "AUDIO",
-          "links": [
-            257
+            294,
+            295
           ]
         }
       ],
       "properties": {
-        "cnr_id": "comfy-core",
-        "ver": "0.3.41",
-        "Node name for S&R": "LoadAudio",
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "f7eb33abc80a2aded1b46dff0dd14d07856a7d50",
+        "Node name for S&R": "INTConstant",
         "widget_ue_connectable": {}
       },
       "widgets_values": [
-        "voice_preview_cas.mp3",
-        null,
-        null
+        257
       ],
-      "color": "#5870aa",
-      "bgcolor": "#445c96"
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
     }
   ],
   "links": [
@@ -3149,10 +3149,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.8140274938684585,
+      "scale": 0.4177248169415962,
       "offset": [
-        -309.72009418547646,
-        1490.8166200928183
+        546.1147832360724,
+        2179.9068241959067
       ]
     },
     "frontendVersion": "1.22.2",
