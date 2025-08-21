@@ -1,0 +1,198 @@
+{
+  "id": "1f2c5ae3-cf9b-4d80-adea-6d84aa2305cb",
+  "revision": 0,
+  "last_node_id": 4,
+  "last_link_id": 2,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "PreviewImage",
+      "pos": [
+        21.815166473388672,
+        -93.37745666503906
+      ],
+      "size": [
+        140,
+        246
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.3.48",
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        -644.902099609375,
+        -82.47320556640625
+      ],
+      "size": [
+        274.080078125,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "COMBO",
+          "widget": {
+            "name": "image"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "choose file to upload",
+          "name": "upload",
+          "type": "IMAGEUPLOAD",
+          "widget": {
+            "name": "upload"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "IMAGE",
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1
+          ]
+        },
+        {
+          "localized_name": "MASK",
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "cnr_id": "comfy-core",
+        "ver": "0.3.48",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "IMG_8567.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "RembgNode_Mix",
+      "pos": [
+        -327.66033935546875,
+        -86.69640350341797
+      ],
+      "size": [
+        294.2046813964844,
+        98
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "localized_name": "model_name",
+          "name": "model_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "model_name"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "masks",
+          "name": "masks",
+          "shape": 6,
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "localized_name": "images",
+          "name": "images",
+          "shape": 6,
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "localized_name": "RGBAs",
+          "name": "RGBAs",
+          "shape": 6,
+          "type": "RGBA",
+          "links": null
+        }
+      ],
+      "properties": {
+        "widget_ue_connectable": {},
+        "aux_id": "MixLabPro/comfyui-mixlab-nodes",
+        "ver": "32b22c39cbe13b46df29ef1b6ab088c2eb4389d2",
+        "Node name for S&R": "RembgNode_Mix"
+      },
+      "widgets_values": [
+        "u2net"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      1,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      1,
+      4,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ue_links": [],
+    "links_added_by_ue": [],
+    "ds": {
+      "scale": 1.1671841070450029,
+      "offset": [
+        1241.1664726504507,
+        347.51041701995916
+      ]
+    }
+  },
+  "version": 0.4
+}
