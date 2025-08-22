@@ -53,4 +53,14 @@ find "$REPO_ROOT" -type f -name "*.json" | while read -r repo_file; do
   fi
 done
 
+## Warn about skipped film-*.json files
+for film_file in "$COMFYUI_WORKFLOWS"/film-*.json; do
+  [ -e "$film_file" ] || continue  # skip if glob has no matches
+  base_name="$(basename "$film_file")"
+  repo_match="$(find "$REPO_ROOT" -type f -name "$base_name" | head -n1 || true)"
+  if [ -z "$repo_match" ]; then
+    echo "WARNING: $film_file has no corresponding file in repo (would be skipped)."
+  fi
+done
+
 echo "Done syncing workflows"
